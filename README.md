@@ -1,5 +1,5 @@
-# (Dataset Exploration Title)
-## by (your name here)
+# Ford-GoBike-System-Data-Exploration
+## by Sultanah Aldossari
 
 
 ## Dataset
@@ -9,22 +9,22 @@
 `About dataset:` 
 a dataset include information about bike trips on February and March 2019. The dataset include
 
-• duration_sec: Trip duration in seconds
-• start_time: Trip start time and date
-• end_time: Trip end time and date
-• start_station_id: Trip start station id
-• start_station_name: Station name
-• start_station_latitude: Start station latitude
-• start_station_longitude Start station longitude
-• end_station_id: Trip end station ID
-• end_station_name: Trip end station name
-• end_station_latitude: End Station Latitude
-• end_station_longitude: End Station Longitude
-• bike_id: Bike ID
-• user_type: User type whether a subscriber or a customer -- (“Subscriber” = Member or “Customer” = Casual)
-• member_birth_year: User birth year
-• member_gender: User gender whether a female or male
-• bike_share_for_all_trip
+- duration_sec: Trip duration in seconds
+- start_time: Trip start time and date
+- end_time: Trip end time and date
+- start_station_id: Trip start station id
+- start_station_name: Station name
+- start_station_latitude: Start station latitude
+- start_station_longitude Start station longitude
+- end_station_id: Trip end station ID
+- end_station_name: Trip end station name
+- end_station_latitude: End Station Latitude
+- end_station_longitude: End Station Longitude
+- bike_id: Bike ID
+- user_type: User type whether a subscriber or a customer -- (“Subscriber” = Member or “Customer” = Casual)
+- member_birth_year: User birth year
+- member_gender: User gender whether a female or male
+- bike_share_for_all_trip
 
 
 `Data Wrangling Process`
