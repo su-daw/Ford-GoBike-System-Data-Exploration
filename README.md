@@ -9,22 +9,22 @@
 `About dataset:` 
 a dataset include information about bike trips on February and March 2019. The dataset include
 
-- duration_sec: Trip duration in seconds
-- start_time: Trip start time and date
-- end_time: Trip end time and date
-- start_station_id: Trip start station id
-- start_station_name: Station name
-- start_station_latitude: Start station latitude
-- start_station_longitude Start station longitude
-- end_station_id: Trip end station ID
-- end_station_name: Trip end station name
-- end_station_latitude: End Station Latitude
-- end_station_longitude: End Station Longitude
-- bike_id: Bike ID
-- user_type: User type whether a subscriber or a customer -- (“Subscriber” = Member or “Customer” = Casual)
-- member_birth_year: User birth year
-- member_gender: User gender whether a female or male
-- bike_share_for_all_trip
+• duration_sec: Trip duration in seconds
+• start_time: Trip start time and date
+• end_time: Trip end time and date
+• start_station_id: Trip start station id
+• start_station_name: Station name
+• start_station_latitude: Start station latitude
+• start_station_longitude Start station longitude
+• end_station_id: Trip end station ID
+• end_station_name: Trip end station name
+• end_station_latitude: End Station Latitude
+• end_station_longitude: End Station Longitude
+• bike_id: Bike ID
+• user_type: User type whether a subscriber or a customer -- (“Subscriber” = Member or “Customer” = Casual)
+• member_birth_year: User birth year
+• member_gender: User gender whether a female or male
+• bike_share_for_all_trip
 
 
 `Data Wrangling Process`
@@ -55,11 +55,25 @@ will be further cleaned in Cleaning phase
 
 ## Summary of Findings
 
-> There were more trips on work days (Mon-Fri) than on the weekends, peaking around 8-9am and 17-18pm during the day. Males constituted a larger proportion of riders than females, and subscribers were more common than casual riders. Furthermore, Most of the members did not use the bike share for all of their trips, and most were between 25 and 40 years old. Because the data was straight-forward, no transformations were required. There are no unusual expectations for a bike sharing system in a major city. As of now, the data indicates that adults in the average working age range are the primary users of the system, and they use the bikes daily for commuting.
+> Based on the univariate exploring, I noticed that there were more trips on weekdays(from Monday till Friday) more than on weekends. Peaking hours are around 7-9 AM and 16-18 PM, which means that major propotion of bike usage are for daily commute to work. Also, A large propotion of bike riders are males and few are females. Most bike riders were between 25 and 40 years old.
 
-> By analyzing the data for the type of user, we discovered different behavior usage between customers and subscribers. Customers are more likely to be casual riders, like tourists or students on vacation. Subscribers, on the other hand, tend to be daily commuters and full-time students who mostly use the system during weekdays, in better weather, and mainly for shorter distances. They tend to rent bikes during the morning and evening of a typical work or school day (8-9am and 5-6pm). It varies between subscribers and customers in the time it takes to use bikes. Subscribers during weekends use their bicycles largely to commute during the week, whereas on weekends, there is a slight increase in customers, which indicates that they use it primarily for leisure purposes.
+> Based on bivariate investigation, we discovered different behavior usage between customers and subscribers. Customers are more likely to be casual riders, like tourists or students on vacation. Subscribers, on the other hand, tend to be daily commuters and full-time students who mostly use the system during weekdays, in better weather, and mainly for shorter distances. They tend to rent bikes during the morning and evening of a typical work or school day (8-9am and 5-6pm).
 
 
 ## Key Insights for Presentation
 
-> Different usage habit between the two type of members are seen from the exploration. Subscribers use the system heavily on work days i.e. Monday through Friday whereas customers ride a lot on weekends, especially in the afternoon. Many trips concentrated around 8-9am and 17-18pm on work days for subscribers, yet customers tend to use more in the late afternoon around 17pm Monday to Friday. The efficient/short period of usage for subscribers corresponds to their high concentration on rush hours Monday through Friday, indicating the use is primarily for work commute. The more relaxing and flexible pattern of customer use shows that they're taking advantage of the bike sharing system quite differently from the subscribers, heavily over weekends and in the afternoon, for city tour or leisure purpose probably.
+> There are several insights derived from our data:
+
+- On weekdays the number of trips increases unlike on weekends were number of trips decreased sharply. and usually the reason is people on weekdays tend use bikes to go to their work, shops, do some activities. And people on weekends do rest.
+- The average age range of FordGo Bikes is between 25 to 35, and then it starts to decrease as age increases. 
+- The most bike trips is for young adults [20,30]Y and middle aged [40,50]Y.
+- Mostly 90% of bikes trips are made by Subscribers, for Customers there are few bike trips compared to subscribers, which maybe indicates that they use it primarily for leisure purposes.
+- Bike riders members are mainly Male members and few are females members, this certainly helps in marketing campaigns as it simplify the targeted segment.
+- Willow st Vine st have the highest traffic etart Station.
+- Parker ave at McAllister St have the highest traffic end Station.
+- In the morning (7-9AM) and afternoon (5-6PM) are the highest bike rides of the day.
+- In general, the bike share system is not very popular with customers; usage increases on weekends. The opposite is true for subscribers - on weekdays, usage has been high, but on weekends, usage has declined sharply.
+- On weekends, there is a severe decline in volume for subscribers, which suggests that they use their bicycles primarily to commute to work during the week, whereas on weekends, there is a slight increase in volume for customers, which suggests that the use is primarily leisure/touring and relaxing.
+- The number of subscribers was higher than the number of casual customers. we can see from the plot  clearly peaks out on typical rush hours when people go to work in the morning and getting off work in the afternoon
+- There is a slight age difference between renters of bikes who ride from Monday through Friday and weekend renters, which corresponds to the commute to work patterns observed in the univariable exploration plots above.
+- The average duration of subscription usage seems to be more consistent between customers and subscribers.
